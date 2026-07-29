@@ -6,7 +6,7 @@ body {
     font-family: "filson-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(243, 117, 22);
+    background-color: #F5F1E6;
 }
 
 img {
@@ -20,25 +20,16 @@ img {
 }
 
 header {
-    border: 1px solid black;
-    margin: auto;
+    background-color: #D3E0DD;
+    margin: 0;
+    padding: 0%;
 }
 
 h1 {
     font-family: "r41-divulga", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 6em;
+    font-size: 5em;
     line-height: .7em;
-    margin-left: 0.5em;
 }
 
-h2 {
-    font-family: "r41-divulga", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4em;
-    line-height: 1em;
-    text-align: right;
-    margin-right: 0.5em;
-}
