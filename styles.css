@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0%;
     width: 100%;
-    height: 100%;
     font-family: "filson-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -32,6 +31,36 @@ img {
 
 .fa-bars {
     font-size: 24px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #7FA7A0;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: none;
+}
+
+#navbar ol {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 2em;
+}
+
+#navbar ol li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+#navbar ol li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 header {
@@ -68,6 +97,7 @@ h2 {
 
 .project div:hover {
     filter: brightness(0.5);
+    cursor: pointer;
 }
 
 .project div img {
@@ -101,6 +131,14 @@ h2 {
   
     #container {
         max-width: 70%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
     }
 
     #columns {
