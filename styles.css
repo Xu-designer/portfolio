@@ -61,13 +61,33 @@ h2 {
 .project div {
     background-color: rgb(187, 202, 207);
     aspect-ratio: 3/2;
+    overflow: hidden;
     /* margin-bottom: 0.5em; */
+    transition: all 0.5s ease;
+}
+
+.project div:hover {
+    filter: brightness(0.5);
 }
 
 .project div img {
     height: 100%;
     margin: auto;
 }
+
+#abw-cover {
+    background-color: rgb(210, 224, 237);
+}
+
+#bittersweet-cover {
+    background-color: rgb(163, 198, 157);
+}
+
+#mindscape-cover img, #axiable-cover img {
+    width: 100%;
+    height: auto;
+}
+
 
 .project p {
     margin-bottom: 2em;
@@ -77,3 +97,20 @@ h2 {
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+  
+    #container {
+        max-width: 70%;
+    }
+
+    #columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .project {
+        flex: 1;
+        min-width: 40%;
+    }
+}
