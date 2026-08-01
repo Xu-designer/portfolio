@@ -158,6 +158,7 @@ footer p {
 }
 
 #email-form input[type=text], #email-form textarea {
+    box-sizing: border-box;
     font-size: 0.8em;
     padding: 0.6em;
     margin-bottom: 1em;
@@ -237,5 +238,9 @@ footer p {
 
     #self-portrait {
         flex: 1;
+    }
+
+    #email-form {
+        width: 50%;
     }
 }
