@@ -135,6 +135,17 @@ h2 {
     filter: sepia(0.2);
 }
 
+footer {
+    background-color: rgb(142, 130, 114);
+    padding: 2em;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
 .hidden {
     display: none;
@@ -146,8 +157,12 @@ h2 {
         font-size: 3em;
     }
 
+    p {
+        font-size: 1.2em;
+    }
+
     #container {
-        max-width: 70%;
+        max-width: 60%;
     }
 
     #hamburger {
@@ -167,5 +182,9 @@ h2 {
     .project {
         flex: 1;
         min-width: 40%;
+    }
+
+    #self-portrait {
+        width: 50%
     }
 }
