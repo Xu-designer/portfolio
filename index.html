@@ -13,6 +13,8 @@
 
     <link href="styles.css" rel="stylesheet">
 
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -21,9 +23,9 @@
     </header>
     <nav id="navbar">
         <ol>
-            <li>My Work</li>
-            <li>About Me</li>
-            <li>Contact</li>
+            <li id="work-link" class="selected">My Work</li>
+            <li id="about-link">About Me</li>
+            <li id="contact-link">Contact</li>
         </ol>
     </nav>
 
@@ -31,75 +33,92 @@
 
         <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
 
-        <section id="work" class="hidden">
+        <section id="work" class="showing">
             <h2>My Work</h2>
 
             <div id="columns">
-                <section class="project">
+                <div class="project">
                     <div id="pixel-cover">
                         <img src="images/pixel-winterquarter2026-branding.jpg"
                             alt="branding for PIXEL Graphic Design Club">
                     </div>
                     <p>PIXEL Graphic Design Club &mdash; Social Media Branding</p>
-                </section>
+                </div>
 
-                <section class="project">
+                <div class="project">
                     <div id="abw-cover">
                         <img src="images/abw-logos-blue-henryxu.png" alt="image of updated A Better Way logo">
                     </div>
                     <p>A Better Way Campaign &mdash; Logo Remake</p>
-                </section>
+                </div>
 
-                <section class="project">
+                <div class="project">
                     <div id="bittersweet-cover">
                         <img src="images/bittersweet-logo.png" alt="bittersweet">
                     </div>
                     <p>bittersweet &mdash; Music Festival Concept</p>
-                </section>
+                </div>
 
-                <section class="project">
+                <div class="project">
                     <div id="mindscape-cover">
                         <img src="images/mindscape-cover.jpg" alt="mindscape cover">
                     </div>
                     <p>Mindscape &mdash; Multi-Page Zine</p>
-                </section>
+                </div>
 
-                <section class="project">
+                <div class="project">
                     <div id="axiable-cover">
                         <img src="images/axiable-hero-image.jpg" alt="Axiable Hero Image">
                     </div>
                     <p>Axiable &mdash; Mobile App Concept</p>
-                </section>
-            </div>    
+                </div>
+            </div>
         </section>
 
-        <section id="about" class="showing">
+        <section id="about" class="hidden">
             <h2>About Me</h2>
 
-            <div id="self-portrait">
-                <img src="images/self-portrait.svg" alt="self-portrait of Henry Xu">
+            <div id="aboutme-flex">
+                <div id="self-portrait">
+                    <img src="images/self-portrait.svg" alt="self-portrait of Henry Xu">
+                </div>
+
+                <div id="aboutme-text">
+                    <p>
+                        Hello, I’m Henry Xu! I recently graduated from the University of California, Davis with a major
+                        in
+                        design and a minor in communication. As a graphic and UI/UX designer, I am dedicated to crafting
+                        experiences that enhance the people’s lives through clear direction and engagement.
+                    </p>
+
+                    <p>
+                        From an early age, I was inspired to learn how to draw so I could share my ideas and bring
+                        happiness
+                        to others, even taking lessons from a professional artist as a teenager. I became a designer to
+                        apply those skills to help people on a wider scale.
+                    </p>
+
+                    <p>
+                        As a designer, I believe that hard work and rational decision-making are key to creating
+                        successful
+                        designs. If you need support in providing rich visual and user experiences to your audience, I
+                        am
+                        ready to lend a helping hand!
+                    </p>
+                </div>
             </div>
 
-            <p>
-                Hello, I’m Henry Xu! I recently graduated from the University of California, Davis with a major in design and a minor in communication. As a graphic and UI/UX designer, I am dedicated to crafting experiences that enhance the people’s lives through clear direction and engagement.
-            </p>
 
-            <p>
-                From an early age, I was inspired to learn how to draw so I could share my ideas and bring happiness to others, even taking lessons from a professional artist as a teenager. I became a designer to apply those skills to help people on a wider scale.
-            </p>
-
-            <p>
-                As a designer, I believe that hard work and rational decision-making are key to creating successful designs. If you need support in providing rich visual and user experiences to your audience, I am ready to lend a helping hand!
-            </p>
         </section>
 
         <section id="contact" class="hidden">
-
+            <h2>Contact</h2>
         </section>
     </div>
 
     <footer>
-        <p>Henry Xu | &#120;&#117;&#104;&#050;&#052;&#053;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</p>
+        <p>Henry Xu | &#120;&#117;&#104;&#050;&#052;&#053;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+        </p>
     </footer>
 
 

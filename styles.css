@@ -147,6 +147,10 @@ footer p {
     text-align: center;
 }
 
+.selected {
+    text-decoration: underline;
+}
+
 .hidden {
     display: none;
 }
@@ -162,7 +166,7 @@ footer p {
     }
 
     #container {
-        max-width: 60%;
+        max-width: 70%;
     }
 
     #hamburger {
@@ -184,7 +188,18 @@ footer p {
         min-width: 40%;
     }
 
+    #aboutme-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #aboutme-text {
+        flex: 1;
+    }
+
     #self-portrait {
-        width: 50%
+        flex: 1;
     }
 }
