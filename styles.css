@@ -147,6 +147,42 @@ footer p {
     text-align: center;
 }
 
+/* Contact Page */
+
+#email-form {
+    margin: auto;
+}
+
+#email-form label, #email-form input {
+    display: block;
+}
+
+#email-form input[type=text], #email-form textarea {
+    font-size: 0.8em;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    width: 100%;
+} 
+
+#email-form label {
+    margin-bottom: 0.2em;
+}
+
+#email-form input[type=submit] {
+    font-size: 1.2em;
+    background-color: #7FA7A0;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border: none;
+    border-radius: 0.5em;
+    transition: all 0.25s;
+}
+
+#email-form input[type=submit]:hover {
+    cursor: pointer;
+    color: rgb(208, 232, 230);
+    background-color: #1a3b35;
+}
+
 .selected {
     text-decoration: underline;
 }

@@ -33,7 +33,7 @@
 
         <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
 
-        <section id="work" class="showing">
+        <section id="work" class="hidden">
             <h2>My Work</h2>
 
             <div id="columns">
@@ -111,8 +111,22 @@
 
         </section>
 
-        <section id="contact" class="hidden">
+        <section id="contact" class="showing">
             <h2>Contact</h2>
+
+            <form id="email-form">
+                <label for="name-edit">Your Name</label>
+                <input type="text" id="name-edit" name="name">
+
+                <label for="email-edit">Your Email</label>
+                <input type="text" id="email-edit" name="email">
+
+                <label for="message-edit">Message</label>
+                <textarea id="message-edit" name="message" rows="10"></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
         </section>
     </div>
 
