@@ -38,6 +38,26 @@ p {
     color: black;
 }
 
+/* #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #7FA7A0;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#sidebar img {
+    margin: auto;
+} */
+
 #navbar {
     position: sticky;
     top: 0;
@@ -45,10 +65,10 @@ p {
     background-color: #7FA7A0;
     padding: 1em;
     margin-bottom: 2em;
-    display: none;
+    /* display: none; */
 }
 
-#navbar ol {
+#navbar ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -56,14 +76,14 @@ p {
     gap: 2em;
 }
 
-#navbar ol li {
+#navbar ul li, #sidebar ul li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     transition: all 0.5s ease;
 }
 
-#navbar ol li:hover {
+#navbar ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -127,6 +147,23 @@ h2 {
     margin-bottom: 2em;
 }
 
+/* PIXEL Graphic Design Club */
+#pixel-logo {
+    background-color: black;
+}
+
+.posts {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.posts img {
+    width: 40%;
+}
+
 /* About Me Page */
 
 #self-portrait {
@@ -159,6 +196,8 @@ footer p {
 
 #email-form input[type=text], #email-form textarea {
     box-sizing: border-box;
+    border: 1px solid #1a3b35;
+    border-radius: 8px;
     font-size: 0.8em;
     padding: 0.6em;
     margin-bottom: 1em;
@@ -192,6 +231,37 @@ footer p {
     display: none;
 }
 
+/* .hidden {
+  display: none;
+  opacity: 0;
+  
+  transition:
+    opacity 0.3s ease,
+    display 0.3s ease;
+} */
+
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   
     h2 {
@@ -203,16 +273,16 @@ footer p {
     }
 
     #container {
-        max-width: 70%;
+        max-width: 60%;
     }
 
     #hamburger {
         display: none;
     }
 
-    #navbar {
+    /* #navbar {
         display: block;
-    }
+    } */
 
     #columns {
         display: flex;

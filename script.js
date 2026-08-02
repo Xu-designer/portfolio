@@ -29,11 +29,40 @@
     })
     
 
+    // function changePage(link, page) {
+    //     document.querySelector('.showing').className = 'hidden';
+    //     document.querySelector('.selected').className = 'unselected';
+    //     page.className = 'showing'
+    //     link.className = 'selected';
+    // }
+    
     function changePage(link, page) {
-        document.querySelector('.showing').className = 'hidden';
+        fadeOut(document.querySelector('.showing'));
         document.querySelector('.selected').className = 'unselected';
-        page.className = 'showing'
+        setTimeout(function () {
+            fadeIn(page);
+        }, 300);
+        // fadeIn(page);
         link.className = 'selected';
+    }
+
+    function fadeOut(element) {
+        element.style.animation = 'fadeout 0.3s ease-in'
+        setTimeout(function () {
+            element.classList.remove('showing');
+            element.classList.add('hidden');
+        }, 300)
+    }
+
+    function fadeIn(element) {
+        element.classList.remove('hidden');
+        element.classList.add('showing');
+        element.offsetHeight;
+        element.style.animation = 'fadein 0.3s ease-in';
+        // element.style.animation = 'fadein 0.3s ease-in'
+        // setTimeout(function () {
+        //     element.className = 'showing';
+        // }, 300)
     }
 
 })()
