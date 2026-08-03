@@ -88,6 +88,10 @@ p {
     cursor: pointer;
 }
 
+.back:hover {
+    cursor: pointer;
+}
+
 header {
     background-color: #D3E0DD;
     margin: 0;
@@ -110,6 +114,10 @@ h2 {
     font-family: "r41-divulga", sans-serif;
     font-weight: 400;
     text-align: center;
+}
+
+h3 {
+    margin-top: 2em;
 }
 
 .project div {
@@ -160,8 +168,18 @@ h2 {
     gap: 1em;
 }
 
+.abw-logo {
+    background-color: #CBD9E7;
+}
+
 .posts img {
     width: 40%;
+}
+
+/* mindscape */
+
+#mindscape-video {
+    width: 100%;
 }
 
 /* About Me Page */
