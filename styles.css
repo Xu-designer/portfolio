@@ -18,6 +18,11 @@ p {
     line-height: 1.4em;
 }
 
+a {
+    color: black;
+    font-style: normal;
+}
+
 #container {
     max-width: 80%;
     margin: auto;
@@ -90,10 +95,10 @@ p {
 }
 
 .back {
-        /* position: sticky;
+    /* position: sticky;
         top: 10%; */
-        margin-left: 1em;
-    }
+    margin-left: 1em;
+}
 
 header {
     background-color: #D3E0DD;
@@ -199,6 +204,21 @@ h3 {
     width: 100%;
 }
 
+/* Axiable */
+.photogrid {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
 /* About Me Page */
 
 #self-portrait {
@@ -208,16 +228,24 @@ h3 {
 }
 
 footer {
-    background-color: rgb(142, 130, 114);
+    /* background-color: rgb(142, 130, 114); */
+    border-top: 1px solid #1a3b35;
     padding: 2em;
     margin-top: 2em;
 }
 
-footer p {
+address {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+/* footer p {
     margin: 0;
     padding: 0;
     text-align: center;
-}
+} */
 
 /* Contact Page */
 
