@@ -105,6 +105,15 @@
         });
     })
 
+    axiableCover.addEventListener('click', function () {
+        changePage(axiableCover, axiable);
+        backBtn.classList.remove('hidden');
+        window.scrollTo({
+            top: 300,
+            behavior: 'smooth'
+        });
+    })
+
     backBtn.addEventListener('click', function () {
         changePage(workLink, myWork);
         backBtn.classList.add('hidden');
