@@ -76,7 +76,8 @@ p {
     gap: 2em;
 }
 
-#navbar ul li, #sidebar ul li {
+#navbar ul li,
+#sidebar ul li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -88,14 +89,16 @@ p {
     cursor: pointer;
 }
 
-.back:hover {
-    cursor: pointer;
-}
+.back {
+        /* position: sticky;
+        top: 10%; */
+        margin-left: 1em;
+    }
 
 header {
     background-color: #D3E0DD;
     margin: 0;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +137,6 @@ h3 {
 }
 
 .project div img {
-    height: 100%;
     margin: auto;
 }
 
@@ -144,11 +146,19 @@ h3 {
 
 #bittersweet-cover {
     background-color: rgb(163, 198, 157);
+    display: flex;
+    align-items: center;
 }
 
-#mindscape-cover img, #axiable-cover img {
+#mindscape-cover img,
+#axiable-cover img,
+#bittersweet-cover {
     width: 100%;
-    height: auto;
+}
+
+#pixel-cover img,
+#abw-cover img {
+    height: 100%;
 }
 
 .project p {
@@ -174,6 +184,13 @@ h3 {
 
 .posts img {
     width: 40%;
+}
+
+/* bittersweet */
+.bittersweet-ads {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 /* mindscape */
@@ -208,11 +225,13 @@ footer p {
     margin: auto;
 }
 
-#email-form label, #email-form input {
+#email-form label,
+#email-form input {
     display: block;
 }
 
-#email-form input[type=text], #email-form textarea {
+#email-form input[type=text],
+#email-form textarea {
     box-sizing: border-box;
     border: 1px solid #1a3b35;
     border-radius: 8px;
@@ -220,7 +239,7 @@ footer p {
     padding: 0.6em;
     margin-bottom: 1em;
     width: 100%;
-} 
+}
 
 #email-form label {
     margin-bottom: 0.2em;
@@ -260,28 +279,28 @@ footer p {
 
 
 @keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 1;
+    }
 
-  100% {
-    opacity: 0;
-  }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fadein {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 }
 
 
 @media screen and (min-width: 768px) {
-  
+
     h2 {
         font-size: 3em;
     }
@@ -330,5 +349,15 @@ footer p {
 
     #email-form {
         width: 50%;
+    }
+
+    .back {
+        position: sticky;
+        top: 10%;
+        margin-left: 5em;
+    }
+
+    .back:hover {
+        cursor: pointer;
     }
 }
