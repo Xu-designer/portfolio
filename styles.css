@@ -6,7 +6,8 @@ body {
     font-family: "filson-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #F5F1E6;
+    /* background-color: #F5F1E6; */
+    background-color: #f1f8f7;
 }
 
 img {
@@ -69,7 +70,7 @@ a {
     z-index: 5;
     background-color: #7FA7A0;
     padding: 1em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     /* display: none; */
 }
 
@@ -78,7 +79,7 @@ a {
     margin: 0;
     padding: 0;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
 }
 
 #navbar ul li,
@@ -103,24 +104,35 @@ a {
 header {
     background-color: #D3E0DD;
     margin: 0;
-    height: 300px;
+    height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
-h1 {
-    font-family: "r41-divulga", sans-serif;
+header div {
+    max-width: 80%;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
+}
+
+h1 {
+    /* font-family: "r41-divulga", sans-serif; */
+    /* font-weight: 400; */
     font-style: normal;
     font-size: 4em;
-    line-height: .7em;
-    margin: 0;
+    line-height: 1em;
+    
+    /* margin: 0; */
 }
 
 h2 {
-    font-family: "r41-divulga", sans-serif;
-    font-weight: 400;
+    /* font-family: "r41-divulga", sans-serif; */
+    /* font-weight: 400; */
     text-align: center;
 }
 
@@ -339,6 +351,11 @@ address {
 
     #container {
         max-width: 60%;
+    }
+
+    #navbar ul {
+        justify-content: right;
+        margin-right: 5%;
     }
 
     #hamburger {
