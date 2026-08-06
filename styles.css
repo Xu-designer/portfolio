@@ -272,11 +272,10 @@ h3 {
 /* Axiable */
 .photogrid {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin-bottom: 40px;
-    width: 100%;
     max-width: 100%;
 }
 
@@ -528,7 +527,7 @@ canvas {
         display: block;
     } */
 
-    #columns {
+    .columns {
         display: flex;
         flex-wrap: wrap;
         gap: 1em;
