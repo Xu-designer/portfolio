@@ -220,6 +220,10 @@ h3 {
     background-color: rgb(210, 224, 237);
 }
 
+#bittersweet-logo {
+    background-color: white;
+}
+
 #bittersweet-cover {
     background-color: rgb(163, 198, 157);
     display: flex;
@@ -252,10 +256,6 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
-}
-
-.abw-logo {
-    background-color: #CBD9E7;
 }
 
 .posts img {
@@ -398,6 +398,10 @@ address {
     cursor: pointer;
     color: rgb(208, 232, 230);
     background-color: #1a3b35;
+}
+
+.light-background {
+    background-color: #779294;
 }
 
 .selected {
@@ -583,5 +587,9 @@ canvas {
 
     .back:hover {
         cursor: pointer;
+    }
+
+    .photogrid {
+        flex-wrap: nowrap;
     }
 }
