@@ -27,6 +27,13 @@
         window.history.scrollRestoration = 'manual';
     }
 
+    window.addEventListener('load', () => {
+            const loader = document.querySelector('#loading');
+            
+            // Adds the class that triggers the CSS fade-out transition
+            loader.classList.add("loader-hidden");
+        });
+
     workLink.addEventListener('click', function () {
         if (myWork.classList.contains('hidden')) {
             changePage(workLink, myWork);

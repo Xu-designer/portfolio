@@ -292,6 +292,38 @@ iframe {
     /* filter: sepia(0.2); */
 }
 
+#loading {
+    margin: 0;
+    padding: 0%;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: black;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading p {
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
+    top: 53%;
+    left: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    transform: translate(-50%, -50%);
+}
+
 footer {
     /* background-color: rgb(142, 130, 114); */
     border-top: 1px solid #1a3b35;
