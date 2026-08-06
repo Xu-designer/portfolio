@@ -8,11 +8,12 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.typekit.net/wka6ndh.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/wka6ndh.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
@@ -27,6 +28,7 @@
 <body>
 
     <nav id="navbar">
+        <img src="images/hx.svg" alt="hx logo" id="logo">
         <ul>
             <li id="work-link" class="selected">My Work</li>
             <li id="about-link">About Me</li>
@@ -35,9 +37,20 @@
     </nav>
 
     <header>
-        <div>
-            <h1>Hi, I'm Henry Xu.<br>I'm a designer!</h1>
+        <!-- particles.js container -->
+        <div id="particles-js"></div> <!-- stats - count particles -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+        <div id="header-text">
+            <h1>I'm Henry Xu!</h1>
+            <p id="headline">I create <strong>clear</strong> and <strong>engaging</strong> designs.</p>
         </div>
+
+        <div id=scroll>
+            <p>Scroll</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
     </header>
 
 
@@ -60,7 +73,7 @@
             <h2>My Work</h2>
 
             <div id="columns">
-                <div class="project" data-aos="fade-up">
+                <div class="project" data-aos="fade-up" data-aos-offset="25">
                     <div id="pixel-cover">
                         <img src="images/pixel-winterquarter2026-branding.jpg"
                             alt="branding for PIXEL Graphic Design Club">
@@ -597,6 +610,8 @@
         <section id="contact" class="hidden">
             <h2>Contact</h2>
 
+            <p>Fill in the form below to get in touch with me!</p>
+
             <form action="https://api.web3forms.com/submit" method="POST" id="email-form">
                 <input type="hidden" name="access_key" value="8fdfccaa-2910-4682-85aa-e6f25d3d53e1">
 
@@ -650,6 +665,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="app.js"></script>
 
 
 </body>
