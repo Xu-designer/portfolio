@@ -11,7 +11,7 @@
     const mindscape = document.querySelector('#mindscape');
     const axiable = document.querySelector('#axiable');
 
-    const logo = document.querySelector('#logo');
+    const logos = document.querySelectorAll('.hx');
     const workLink = document.querySelector('#work-link');
     const aboutLink = document.querySelector('#about-link');
     const contactLink = document.querySelector('#contact-link');
@@ -35,14 +35,16 @@
         loader.classList.add("loader-hidden");
     });
 
-    logo.addEventListener('click', function () {
-        changePage(workLink, myWork);
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-        backBtn.classList.add('hidden');
-    })
+    logos.forEach(logo => {
+        logo.addEventListener('click', function () {
+            changePage(workLink, myWork);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            backBtn.classList.add('hidden');
+        })
+    });
 
     workLink.addEventListener('click', function () {
         if (myWork.classList.contains('hidden')) {

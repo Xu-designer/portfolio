@@ -44,26 +44,6 @@ a {
     color: black;
 } */
 
-/* #sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: #7FA7A0;
-    width: 100%;
-    height: 100%;
-}
-
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#sidebar img {
-    margin: auto;
-} */
-
 #navbar {
     position: sticky;
     top: 0;
@@ -80,7 +60,7 @@ a {
     display: none;
 }
 
-#logo:hover {
+.hx:hover {
     cursor: pointer;
 }
 
@@ -92,8 +72,7 @@ a {
     gap: 3em;
 }
 
-#navbar ul li,
-#sidebar ul li {
+#navbar ul li {
     list-style-type: none;
     margin: 0;
     padding-bottom: 0.2em;
@@ -295,6 +274,26 @@ iframe {
     width: 70%;
     margin: auto;
     /* filter: sepia(0.2); */
+}
+
+.toolkit ul {
+    padding: 0;
+}
+
+.toolkit li {
+    list-style-type: none;
+    padding-bottom: 0.2em;
+    border-radius: 10px;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    margin: 0.5em;
+}
+
+.tools li {
+    background-color: rgb(249, 70, 20);
+}
+
+.skills li {
+    background-color: #0A5A61;
 }
 
 #loading {
@@ -572,6 +571,16 @@ canvas {
     }
 
     #self-portrait {
+        flex: 1;
+    }
+
+    .toolkit {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .tools, .skills {
         flex: 1;
     }
 
