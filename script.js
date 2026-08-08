@@ -10,6 +10,7 @@
     const bittersweet = document.querySelector('#bittersweet');
     const mindscape = document.querySelector('#mindscape');
     const axiable = document.querySelector('#axiable');
+    const sabon = document.querySelector('#sabon');
 
     const logos = document.querySelectorAll('.hx');
     const workLink = document.querySelector('#work-link');
@@ -20,6 +21,7 @@
     const bittersweetCover = document.querySelector('#bittersweet-cover');
     const mindscapeCover = document.querySelector('#mindscape-cover');
     const axiableCover = document.querySelector('#axiable-cover');
+    const sabonCover = document.querySelector('#sabon-cover');
 
     // const backBtns = document.querySelectorAll('.back');
     const backBtn = document.querySelector('.back');
@@ -126,6 +128,15 @@
 
     axiableCover.addEventListener('click', function () {
         changePage(axiableCover, axiable);
+        backBtn.classList.remove('hidden');
+        window.scrollTo({
+            top: 600,
+            behavior: 'smooth'
+        });
+    })
+
+    sabonCover.addEventListener('click', function () {
+        changePage(sabonCover, sabon);
         backBtn.classList.remove('hidden');
         window.scrollTo({
             top: 600,
