@@ -11,6 +11,7 @@
     const mindscape = document.querySelector('#mindscape');
     const axiable = document.querySelector('#axiable');
     const sabon = document.querySelector('#sabon');
+    const seuss = document.querySelector('#seuss');
 
     const logos = document.querySelectorAll('.hx');
     const workLink = document.querySelector('#work-link');
@@ -22,6 +23,7 @@
     const mindscapeCover = document.querySelector('#mindscape-cover');
     const axiableCover = document.querySelector('#axiable-cover');
     const sabonCover = document.querySelector('#sabon-cover');
+    const seussCover = document.querySelector('#seuss-cover');
 
     // const backBtns = document.querySelectorAll('.back');
     const backBtn = document.querySelector('.back');
@@ -137,6 +139,15 @@
 
     sabonCover.addEventListener('click', function () {
         changePage(sabonCover, sabon);
+        backBtn.classList.remove('hidden');
+        window.scrollTo({
+            top: 600,
+            behavior: 'smooth'
+        });
+    })
+
+    seussCover.addEventListener('click', function () {
+        changePage(seussCover, seuss);
         backBtn.classList.remove('hidden');
         window.scrollTo({
             top: 600,
