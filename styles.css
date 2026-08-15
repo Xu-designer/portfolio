@@ -97,16 +97,14 @@ caption {
 
 header {
     position: relative;
-    /* background-color: #0b6d68; */
+    padding-top: 3em;
     background: linear-gradient(180deg, #0A5A61 0%, #050203 100%);
     margin: 0;
-    height: 600px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    /* opacity: 0.8; */
-    /* background: repeating-linear-gradient(-45deg, #F08336 0px, #F08336 5px, transparent 5px, transparent 8px), repeating-linear-gradient(45deg, #F08336 0px, #F08336 5px, transparent 5px, transparent 8px), linear-gradient(#eddac2, #eddac2); */
     transition: background-size 0.4s ease, background-color 0.4s ease;
     overflow: hidden;
 }
@@ -123,7 +121,7 @@ header {
 }
 
 #headline {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #eaeaea;
 }
 
@@ -143,12 +141,13 @@ h1 {
     /* font-family: "r41-divulga", sans-serif; */
     /* font-weight: 400; */
     font-style: normal;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1em;
     margin-bottom: 0.3em;
 
     /* margin: 0; */
 }
+
 
 #scroll {
     text-align: center;
@@ -254,6 +253,7 @@ h3 {
 /* bittersweet */
 .bittersweet-ads {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
 }
@@ -367,9 +367,9 @@ address {
 }
 
 #contact p {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 0;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
 
 #email-form {
@@ -517,6 +517,11 @@ canvas {
 
 @media screen and (min-width: 768px) {
 
+    header {
+        padding-top: 2em;
+        height: 600px;
+    }
+
     h1 {
         font-size: 4em;
     }
@@ -643,5 +648,9 @@ canvas {
     .flex-nonwrap {
         display: flex;
         gap: 2em;
+    }
+
+    .bittersweet-ads {
+        flex-wrap: nowrap;
     }
 }
