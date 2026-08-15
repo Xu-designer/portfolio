@@ -121,7 +121,7 @@ header {
 }
 
 #headline {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #eaeaea;
 }
 
@@ -520,6 +520,11 @@ canvas {
     header {
         padding-top: 2em;
         height: 600px;
+    }
+
+    #header-text {
+        max-width: 50%;
+        margin: auto;
     }
 
     h1 {
