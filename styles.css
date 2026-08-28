@@ -107,17 +107,15 @@ header {
     align-items: center;
     transition: background-size 0.4s ease, background-color 0.4s ease;
     overflow: hidden;
+    text-align: center;
 }
 
 #header-text {
     position: relative;
     z-index: 1;
-
     max-width: 80%;
-    /* margin: auto; */
     margin-top: 10%;
     margin-bottom: 2em;
-    text-align: left;
 }
 
 #headline {
@@ -138,14 +136,10 @@ h3 {
 }
 
 h1 {
-    /* font-family: "r41-divulga", sans-serif; */
-    /* font-weight: 400; */
     font-style: normal;
     font-size: 2em;
     line-height: 1em;
     margin-bottom: 0.3em;
-
-    /* margin: 0; */
 }
 
 
@@ -179,7 +173,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .project div {
@@ -262,6 +256,10 @@ h3 {
 
 #mindscape-video, #seuss-video {
     width: 100%;
+}
+
+#mindscape-spreads img {
+    margin: 1em 1em;
 }
 
 /* Axiable */
@@ -348,6 +346,21 @@ iframe {
     left: 50%;
     background-color: rgba(240, 248, 255, 0);
     transform: translate(-50%, -50%);
+}
+
+#loading .fa-spinner {
+    position: absolute;
+    text-align: center;
+    font-size: 3em;
+    top: 60%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+    color: #eaeaea;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 footer {
@@ -524,7 +537,6 @@ canvas {
 
     #header-text {
         max-width: 50%;
-        margin: auto;
     }
 
     h1 {
